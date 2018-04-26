@@ -1,0 +1,229 @@
+<html lang="ro"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Tutorial HTML Introducere</title>
+<meta name="Description" content="Tutorial HTML Introducere Notiuni de baza">
+<meta name="KEYWORDS" content="tutorial,HTML,introducere,notiuni,baza">
+<meta name="AUTHOR" content="Drogoreanu Catalin Gabriel">
+<meta name="ROBOTS" content="index, all">
+<meta name="ROBOTS" content="index, follow">
+<meta name="EXPIRES" content="never">
+<meta name="REVISIT-AFTER" content="7 days">
+<link rel="stylesheet" type="text/css" href="css1.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="animated_favicon1.gif" type="image/gif">
+<!-- Google Analytics -->
+<script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en.zzKzJmzQ0jc.O/m=auth/exm=plusone/rt=j/sv=1/d=1/ed=1/am=AQE/rs=AGLTcCN8-mbD5X4aP09_7anOxgNB7baFRg/cb=gapi.loaded_1" async=""></script><script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en.zzKzJmzQ0jc.O/m=plusone/rt=j/sv=1/d=1/ed=1/am=AQE/rs=AGLTcCN8-mbD5X4aP09_7anOxgNB7baFRg/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="https://apis.google.com/js/plusone.js" gapi_processed="true"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27006956-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Google Analytics -->
+<link rel="author" href="https://plus.google.com/111043308203275874066">
+</head>
+<body>
+<table width="800" cellspacing="0" cellpadding="0">
+<tbody><tr><td width="620">
+<!-- Cuprins -->
+<a name="a"></a><h1>Tutorial HTML</h1>
+<div align="right" class="pub">Data publicarii: Februarie 2006</div>
+<div align="right" class="copy"><a href="termeni-si-conditii.php" rel="nofollow">Termeni si conditii</a></div>
+<br>
+<div align="left"><a href="http://www.drogoreanu.ro/tutorials/index.php">Tutoriale</a> » <a href="http://www.drogoreanu.ro/tutorials/html.php">HTML</a> » <a href="http://www.drogoreanu.ro/tutorials/html.php">HTML - Notiuni de baza</a></div>
+<br><div class="info">
+<span class="categ">HTML</span>
+<span class="month">Feb</span>
+<span class="year">2006</span>
+</div><h1>HTML - Notiuni de baza</h1>
+<strong>HTML</strong> este prescurtarea de la <span class="italic">Hyper Text Mark-up Language</span> si este codul care sta la baza paginilor web. Paginile HTML contin elemente (etichete) si au extensia <span class="italic">.html</span> sau <span class="italic">.htm</span>
+<p>
+Puteti scrie astfel de fisiere cu Notepad sau cel mai indicat cu <a href="http://www.drogoreanu.ro/tutorials/editoare.php">editoare cod sursa</a> specializate, de exemplu Crimson Editor, care va indica si numarul liniilor, lucru util la depanarea codului HTML. Verificati ca nu aveti extensiile ascunse (My Computer -&gt; Tools -&gt; Folder Options -&gt; View -&gt; debifati "Hide extensions for known file types").
+</p><p>
+Pentru a crea un fisier html mai intai creati un fisier text, apoi ii redenumiti extensia din txt in html
+</p><p>
+Elemetele sunt incadrate de tag-uri. Tag-urile sunt simbolurile care marcheaza inceputul si sfarsitul unui element. Tag-ul pentru inceput este &lt; iar pentru sfarsit este &gt;. 
+</p><p>
+In marea lor majoritate elementele sunt pereche, una de deschidere &lt;eticheta&gt; si alta de inchidere &lt;/eticheta&gt;. Browserul interpreteaza aceste etichete afisand rezultatul pe ecran. HTML nu este un limbaj case sensitiv (nu face deosebirea intre litere mici si mari).
+</p><p>
+Pagina principala a unui domeniu este fisierul <span class="italic">index.html</span>. Aceasta pagina este setata a fi afisata automat la vizitarea unui domeniu.<br>
+De exemplu la vizitarea domeniului <span class="italic">www.nume.ro</span> este afisata pagina <span class="italic">www.nume.ro/index.html</span>.
+</p><p>
+Unele etichete permit utilizarea de atribute care pot avea anumite valori:<br>
+&lt;eticheta atribut="valoare"&gt;
+...
+&lt;/eticheta&gt;</p><p>
+Componenta unui document HTML este:<br>
+1. versiunea HTML a documentului<br>
+2. zona <span class="italic">head</span> cu etichetele &lt;head&gt; &lt;/head&gt;<br>
+<a name="rh8"></a>3. zona <span class="italic">body</span> cu etichetele &lt;body&gt; &lt;/body&gt; sau &lt;frameset&gt; &lt;/frameset&gt;
+</p><p>
+<a name="rh2"></a><strong>Versiunea HTML</strong> poate fi:
+</p><p>
+<span class="italic">HTML 4.01 Strict</span>
+</p><div class="col1">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</div>
+<p>
+<span class="italic">HTML 4.01 Transitional</span><br>
+</p><div class="col1">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</div>
+<p>
+<span class="italic">HTML 4.01 Frameset</span><br>
+</p><div class="col1">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"&gt;</div>
+<p>
+<a name="rh25"></a>Toate paginile HTML incep cu eticheta &lt;html&gt; si se termina cu eticheta &lt;/html&gt;.<br>
+In interiorul acestor etichete gasim perechea &lt;head&gt; &lt;/head&gt; si perechea &lt;body&gt; &lt;/body&gt;.</p><p>
+<a name="rh23"></a>Zona <strong>head</strong> contine titlul paginii intre etichetele<a name="rh49"></a> &lt;title&gt; si &lt;/title&gt;, descrieri de tip &lt;meta&gt;, stiluri pentru formatarea textului, scripturi si linkuri catre fisiere externe (de exemplu scripturi Javascript, fisiere de tip CSS sau favicon).</p><p>
+Continutul etichetei <span class="italic">title</span> este afisat de browser pe cea mai de sus linie (banda albastra de sus).
+</p><p>
+<a name="rh33"></a>Etichetele de tip <span class="italic">meta</span> contin cuvinte cheie, descrierea paginii, date despre autor, informatii utile motoarelor de cautare si au urmatorul format:<br>
+</p><div class="col1">
+&lt;meta name="nume" content="continut"&gt;
+</div>
+<p>
+<a name="rh32"></a>Exemplu: link catre un fisier extern CSS:<br>
+</p><div class="col1">
+&lt;link rel="stylesheet" type="text/css" href="css.css"&gt;
+</div>
+<p>
+Zona <strong>body</strong> gazduieste practic toate etichetele afisate de browser pe ecran.</p><p>
+<a href="html/exemplu.html">Exemplu</a>: o pagina HTML cu titlul <span class="italic">Exemplu</span> iar continutul <span class="italic">Continut pagina</span>
+</p><div class="col1">
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;Titlu&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+Continut pagina<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</div>
+<p>
+<a name="rh1"></a>Comentariul in HTML, care bineinteles nu va fi afisat de browser, poate fi introdus astfel:<br>
+</p><div class="col1">
+&lt;!-- Acesta este un comentariu in HTML --&gt;
+</div>
+<p>
+<a href="#a">Sus</a>
+<!-- Cuprins -->
+</p></td><td width="30"></td>
+<td valign="top">
+<div class="data" align="right">
+<a href="http://www.drogoreanu.ro/tutorials/index.php">
+<img src="images/logo2.png" width="150" height="50" alt="Tutoriale" border="0"></a>
+<br>
+26 Apr 2018&nbsp;&nbsp;10:37 PM<center><img src="qrcode.php" alt="Tutoriale" title="Tutoriale"></center>
+<div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 38px; height: 24px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 38px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1524771468643" name="I0_1524771468643" src="https://apis.google.com/u/0/se/0/_/+1/fastbutton?usegapi=1&amp;origin=http%3A%2F%2Fwww.drogoreanu.ro&amp;url=http%3A%2F%2Fwww.drogoreanu.ro%2Ftutorials%2Fhtml.php&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.zzKzJmzQ0jc.O%2Fm%3D__features__%2Fam%3DAQE%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCN8-mbD5X4aP09_7anOxgNB7baFRg#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1524771468643&amp;_gfid=I0_1524771468643&amp;parent=http%3A%2F%2Fwww.drogoreanu.ro&amp;pfname=&amp;rpctoken=27291416" data-gapiattached="true" title="G+"></iframe></div>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</div>
+<br>
+<div id="menu">
+<ul>
+<li><a href="http://www.drogoreanu.ro">Catalin</a></li>
+<li><a href="http://www.drogoreanu.ro/tutorials/index.php">Tutoriale</a></li>
+<li>&nbsp;</li>
+<li><a href="http://www.drogoreanu.ro/tutorials/html.php">Notiuni de baza</a></li>
+<li><a href="http://www.drogoreanu.ro/tutorials/cap1.php">Formatare text</a></li>
+<li><a href="http://www.drogoreanu.ro/tutorials/cap2.php">Liste</a></li>
+<li><a href="http://www.drogoreanu.ro/tutorials/cap3.php">Legaturi</a></li>
+<li><a href="http://www.drogoreanu.ro/tutorials/cap4.php">Imagini</a></li>
+<li><a href="http://www.drogoreanu.ro/tutorials/cap5.php">Tabele</a></li>
+<li><a href="http://www.drogoreanu.ro/tutorials/cap6.php">Sunete</a></li>
+<li><a href="http://www.drogoreanu.ro/tutorials/cap7.php">Videoclipuri</a></li>
+<li><a href="http://www.drogoreanu.ro/tutorials/cap8.php">Cadre</a></li>
+<li><a href="http://www.drogoreanu.ro/tutorials/cap9.php">Formulare</a></li>
+<li><a href="http://www.drogoreanu.ro/tutorials/cap10.php">Harti de imagini</a></li>
+<li><a href="http://www.drogoreanu.ro/tutorials/cap11.php">Verificarea paginilor</a></li>
+<li><a href="http://www.drogoreanu.ro/tutorials/realizarea-unui-site.php">Realizarea unui site</a></li>
+<li><a href="http://www.drogoreanu.ro/tutorials/refhtml.php">Etichete HTML</a></li>
+<li>&nbsp;</li>
+<li><a href="http://www.drogoreanu.ro/tutorials/anexe.php">Anexe</a></li>
+<li><a href="http://www.drogoreanu.ro/tutorials/faq.php">FAQ</a></li>
+<li>&nbsp;</li>
+<li><a href="http://www.drogoreanu.ro/tutorials/autor.php" rel="nofollow">Autor</a></li>
+<li><a href="http://www.drogoreanu.ro/tutorials/search.php" rel="nofollow">Search</a></li>
+<li><a href="http://www.drogoreanu.ro/contact.php" rel="nofollow">Contact</a></li>
+</ul>
+</div><div class="copy">
+<span class="black">Copyright&nbsp;©&nbsp;2005-2016</span>
+<a href="termeni-si-conditii.php" rel="nofollow">Termeni si conditii</a>
+</div></td></tr>
+<tr><td>
+<form name="mesaj" method="post" action="adaugacomentariu1.php">
+<table width="100%" border="0" cellpadding="0" cellspacing="2" class="formular1">
+<tbody><tr><td colspan="3" class="comentarii" align="center">Adauga comentariu</td></tr>
+<tr><td width="150" align="right" class="comentarii">Nume:</td><td width="300"><input type="text" name="nume" size="40"></td><td class="comentarii">*</td></tr>
+<tr><td width="150" align="right" class="comentarii">Email:</td><td><input type="text" name="email" size="40"></td><td class="comentarii">*</td></tr>
+<tr><td align="right" class="comentarii">Comentariu:</td><td><textarea name="comentariu" rows="5" cols="30"></textarea></td><td class="comentarii">*</td></tr>
+<tr><td>&nbsp;</td><td><img src="./temp/1524771465.jpg" width="200" height="60" alt="Poza" class="poza"></td><td>&nbsp;</td></tr>
+<tr><td align="right" class="comentarii">Introduceti codul:</td><td><input type="text" name="str" size="10"></td><td class="comentarii">*</td></tr>
+<tr><td colspan="3" align="center"><input type="submit" value="Trimite mesaj"></td></tr>
+
+<tr><td colspan="3"><p>Completarea campurilor marcate cu * este obligatorie.
+</p><p>
+Autorul isi rezerva dreptul de a nu posta comentariile care nu au legatura cu subiectul articolului.</p></td></tr>
+</tbody></table>
+<input type="hidden" name="file" value="http://www.drogoreanu.ro/tutorials/html.php">
+</form></td><td colspan="2">&nbsp;</td></tr>
+<tr><td colspan="3">
+<div class="comentarii">Comentarii:</div>
+<div class="comm-nume">Marian</div><div class="comm-data">19-10-2011</div>
+<div class="comentariu">
+Am invatat html citind fiecare articol al tau. Acum sunt in stare sa ma descurc binisor. Jos palaria in fata dvs dom' profesor
+</div>
+<div class="comm-nume">Dana</div><div class="comm-data">28-11-2012</div>
+<div class="comentariu">
+Buna ziua. In primul rand, multumesc pentru oportunitatea de a invata &lt;html&gt;-ul. In al doilea rand, o sa pun o intrebare care ar putea fi ridicol de prosteasca, pt dvs, dar sunt cu totul neinitiata. Iata despre ce este vorba: Am inceput crearea unui &lt;html&gt;, folosind WordPad. Am reusit sa vad pagina, dar nu stiu cum sa ma intorc in formatul initial,pentru a continua sa o lucrez. Va multumesc si mi se pare extraordinar ca va consumati timpul ajutandu-i pe altii.
+</div>
+<div class="comm-nume">Razvan</div><div class="comm-data">09-01-2013</div>
+<div class="comentariu">
+sunt student anul II si la cursul de programare facem html.nu inteleg nimic.un coleg mia spus ca el a invatat pentru examen din siteul tau.am facut si eu la fel si am luat examenul.profu mia dat sa fac siteul grupei si mia promis ca imi da examenul in vara.am sa te recomand si eu.merci
+</div>
+<div class="comm-nume">Romica</div><div class="comm-data">10-02-2013</div>
+<div class="comentariu">
+vreau sa fac un site despre grafica. ma poti ajuta? eu nam timp sa invat si html. platesc pentru munca depusa
+</div>
+<div class="comm-nume">Mihai</div><div class="comm-data">06-03-2013</div>
+<div class="comentariu">
+eu fac pagini cu ms word. sunt curios la ce-mi trebuie sa stiu html?
+</div>
+<div class="comm-nume">Autor</div><div class="comm-data">10-03-2013</div>
+<div class="autor">
+Nu este obligatoriu sa inveti HTML. Dar daca vrei sa schimbi anumite detalii ale pagini web nu o vei putea face cu Word ci modificand codul HTML.
+</div>
+<div class="comm-nume">Cosmin</div><div class="comm-data">18-04-2013</div>
+<div class="comentariu">
+Am terminat de studiat tutorial HTML. Mi-a placut si nu pare ceva deosebit de greu. Ce imi reconandati sa studiez in continuare tot din categoria web? Va multumesc pentru faptul ca aveti timp sa scrieti aceste articole. Cosmin an I Constructii
+</div>
+<div class="comm-nume">Autor</div><div class="comm-data">20-04-2013</div>
+<div class="autor">
+Continua cu CSS, apoi PHP si MySQL. Daca mai ai timp :) putina grafica nu ar strica. Bafta!
+</div>
+<div class="comm-nume">Manuel</div><div class="comm-data">26-04-2013</div>
+<div class="comentariu">
+Pe cand va aparea si un tutorial JavaScript? Sincer, am studiat toate tutorialele ce le-ai facut si uneori chiar mi-au fost de mare folos. Multumesc.
+</div>
+<div class="comm-nume">Florentin</div><div class="comm-data">22-05-2013</div>
+<div class="comentariu">
+Daca ati putea introduce un capitol despre crearea unei galerii foto in html ar fi extraordinar pentru foarte multi incepatori. Multumim pentru ca existati.
+</div>
+<div class="comm-nume">Paul</div><div class="comm-data">04-08-2013</div>
+<div class="comentariu">
+De la site-ul tau am inceput sa invat, si am ajuns in 2 ani de am reusit sa-mi fac un atestat de nota 10 html,php,mysql,javascript (pe langa scoala caci la scoala nu am studiat asta). Momentan si mie imi par chestii de baza acestea, usoare insa ai un mod foarte bun de a explica si se intelege perfect din tutoriale. Felicitari!
+</div>
+<p>
+<a href="#a">Sus</a>
+</p></td></tr>
+</tbody></table>
+
+<iframe name="oauth2relay1216450736" id="oauth2relay1216450736" src="https://accounts.google.com/o/oauth2/postmessageRelay?parent=http%3A%2F%2Fwww.drogoreanu.ro&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.zzKzJmzQ0jc.O%2Fm%3D__features__%2Fam%3DAQE%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCN8-mbD5X4aP09_7anOxgNB7baFRg#rpctoken=921515686&amp;forcesecure=1" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body></html>
